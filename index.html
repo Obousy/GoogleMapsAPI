@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./mapform.css">
+    
+    <title>Maps API</title>
+    
+</head>
+
+<body>
+    
+               <section class="flex-container">
+        
+        
+        
+        <div id="map"></div>          <!--HTML tags so that the html code functions 
+                    
+        and shows where I should insert the buttons-->
+        
+        
+         
+        
+        
+        <!--This shows button 1, where we can add random markers-->
+        
+        <div class="aside">
+            <div class="action-buttons">
+                <button onclick="map.MarkAdd()">B1</button> 
+                
+                
+                
+                
+                
+                <!--public void keyReleased(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0) {
+		// TODO Auto-generated method stub -->
+                
+                
+                
+                
+                
+                
+               <!--This shows button 1, where we can add random markers-->
+
+                <button type="button" onclick="map.MarkerChoice()">B2</button>
+                
+                <!--Button that add circle and you choose where to put-->
+                
+                
+                
+
+    <button type="button" onclick="map.CountryLand()">B3</button>
+                
+                
+                <!--These methods are needed so that when button is clicked they function-->
+                
+                <!--Button 3 allows you to search country and highlight its' land-->
+
+                <button type="button" onclick="map.CircleShuffle()">B4</button>
+                
+                
+                
+                
+                <!--These are needed so that the buttons appear -->
+                
+                
+                                        <!--Button 4, which selects randomly and draws a circle -->
+
+                <button type="button"
+                    onclick="map.Polygon()">B5</button>
+                
+                <!--This button adds polygons on the map-->
+                
+                
+                
+
+                
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var KEY = 'AIzaSyAZgyxwztQhyFDkQaowF_DqJGQciXqj5fw'
+    
+    
+    
+    //var this.map = ImageDisplay
+    
+    //map.Imag
+    
+    
+    
+    var Store = 'map'
+    
+    
+    
+    
+    	//Scanner scanner = new Scanner(System.in); //accesses class to get user inp
+		                                          //
+
+	//	int Keyboard = scanner.nextInt(); //integer variable, set using the scanner object 
+		                                       //using the i
+		                                       //r 
+
+	//	while (Keyboard < 1 { //whil 
+	//		System.out.);//if es 
+	//		          //to true it move on 
+
+	//		NumberTKEy 
+
+	//	}
+	//	int G
+	//	int
+    
+    var OrX = -80.57984
+    
+    
+    
+                                  var OrY = 62.94725
+
+   
+    var tri = [
+        
+        
+        //stored all inside a neat variable, so that it can function 
+        
+        //variable can then ouput this 
+        
+        
+        
+        
+        
+                     { lat: 35.897, lng: -76.14 },
+                     
+                     
+        
+        
+        { lat: 21.349, lng: -54.780 },
+        
+        //these are details which signsify the co-ordinates of the circle 
+        
+        
+        
+        //de
+        
+        //var x = 0 
+   // ]
+        
+        { lat: 45.124, lng: -75.453 },
+        
+        
+        { lat: 32.341, lng: -54.67 },
+    ]
+
+    var searchBox = null
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+                <!--This makes sure that for button 3 the country will be highlighted -->
+
+
+<script src="./map.js"></script>
+
+<script>
+    
+    
+    
+    const map = new Maps() //Method that calls the Maps
+    
+    map.ImageDisplay(Store, true, OrX, OrY, true).then(() => {
+        
+        
+        
+        
+                                      
+                             var keyboardstring = document.getElementById("pac-input"); //gets input to search 
+                             
+                             
+        
+        //allows the input to be searched - hence variable name variable - when searched it gets user element to react to your input and
+        //produce the output 
+        searchBox = new google.maps.places.searchBox(keyboardstring);
+    })
+</script>
+
+</html>
+
+ <!--Ending HTML-->
